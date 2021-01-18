@@ -35,7 +35,7 @@ while 1:
     for event in pygame.event.get():
         if event.type == pygame.QUIT: sys.exit()
         if event.type == pygame.MOUSEBUTTONDOWN:
-            print('boom', mousetocords())
+            print('boom', char.get_AbsoluteCordOfMouse())
         if event.type == pygame.KEYDOWN:           
             if event.key == pygame.K_ESCAPE:
                 sys.exit()
